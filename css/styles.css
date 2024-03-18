@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+.box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 150px 150px;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 300px;
+  background-color: brown;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 600px;
+  background-color: blue;
+  border-radius: 25%;
+}
